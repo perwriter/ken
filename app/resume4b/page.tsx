@@ -7,11 +7,11 @@ export default function Resume4() {
       <header className="flex justify-between items-center p-6">
         <a href="#" className="flex items-center gap-2">
           <div className="w-6 h-6 bg-white rounded-full" />
-          <span className="text-sm text-gray-400">hey@kennethwebber.com</span>
+          <span className="text-sm text-gray-400">kennyWebber@Outlook.com</span>
         </a>
-        <button className="p-2 hover:bg-gray-700 rounded-full transition-colors">
+        {/* <button className="p-2 hover:bg-gray-700 rounded-full transition-colors">
           <Menu className="w-6 h-6" />
-        </button>
+        </button> */}
       </header>
 
       {/* Main Content */}
