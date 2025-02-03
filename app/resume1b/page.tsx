@@ -1,20 +1,20 @@
-import Link from "next/link"
-import { Linkedin } from "lucide-react"
+import Link from "next/link";
+import { Linkedin } from "lucide-react";
 
 export default function Resume() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-black text-white">
       {/* Navigation */}
       <nav className="flex justify-end gap-8 p-8 text-sm font-medium">
-        <Link href="#" className="text-black">
+        {/* <Link href="#" className="text-white hover:text-gray-400 transition-colors">
           resume
         </Link>
-        <Link href="#" className="text-gray-500 hover:text-black transition-colors">
+        <Link href="#" className="text-gray-400 hover:text-white transition-colors">
           about
         </Link>
-        <Link href="#" className="text-gray-500 hover:text-black transition-colors">
+        <Link href="#" className="text-gray-400 hover:text-white transition-colors">
           portfolio
-        </Link>
+        </Link> */}
       </nav>
 
       {/* Main Content */}
@@ -28,16 +28,16 @@ export default function Resume() {
                 <h1 className="text-[2.5rem] leading-tight font-medium">
                   Kenneth Webber,
                   <br />
-                  Technical Support Specialist
+                  Senior Consultant
                 </h1>
               </div>
 
               <div className="flex items-center gap-2 mb-8">
                 <div className="w-2 h-2 rounded-full bg-green-400"></div>
-                <span className="text-sm text-gray-600">Available</span>
+                <span className="text-sm text-gray-400">Available</span>
               </div>
 
-              <p className="text-gray-600 max-w-2xl">
+              <p className="text-gray-400 max-w-2xl">
                 A seasoned expert in my field, I specialize in driving business excellence and delivering impactful
                 results. With experience collaborating with some of the world's most prestigious companies, I bring a
                 strategic and results-driven approach to every project.
@@ -51,7 +51,7 @@ export default function Resume() {
               {/* OpenWater */}
               <div className="mb-12">
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center shrink-0">
+                  <div className="w-12 h-12 rounded-lg bg-gray-700 flex items-center justify-center shrink-0">
                     <span className="text-xs font-medium">OW</span>
                   </div>
                   <div>
@@ -63,11 +63,11 @@ export default function Resume() {
                       </div>
                     </div>
                     <p className="text-sm text-gray-500 mb-4">Aug 2016 – Dec 2024</p>
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-gray-400 mb-4">
                       Various Roles: Awards Consultant, Senior Consultant, Development Coordinator, Implementation
                       Specialist
                     </p>
-                    <ul className="list-disc pl-4 space-y-2 text-gray-600 text-sm">
+                    <ul className="list-disc pl-4 space-y-2 text-gray-400 text-sm">
                       <li>
                         Led the implementation and optimization of OpenWater's software solutions for enterprise
                         clients.
@@ -84,7 +84,7 @@ export default function Resume() {
               {/* Other roles following same pattern */}
               <div className="mb-12">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center shrink-0">
+                  <div className="w-12 h-12 rounded-lg bg-gray-700 flex items-center justify-center shrink-0">
                     <span className="text-xs font-medium">OC</span>
                   </div>
                   <div>
@@ -95,8 +95,8 @@ export default function Resume() {
                       </div>
                     </div>
                     <p className="text-sm text-gray-500 mb-4">Sep 2016 – Sep 2017</p>
-                    <p className="text-gray-600 mb-4">Head of Marketing and Business Development</p>
-                    <ul className="list-disc pl-4 space-y-2 text-gray-600 text-sm">
+                    <p className="text-gray-400 mb-4">Head of Marketing and Business Development</p>
+                    <ul className="list-disc pl-4 space-y-2 text-gray-400 text-sm">
                       <li>Developed marketing campaigns for brand visibility.</li>
                       <li>Engaged with startup founders and entrepreneurs.</li>
                       <li>Built partnerships leading to 40% subscription increase.</li>
@@ -115,7 +115,7 @@ export default function Resume() {
               <p className="mb-2">KennyWebber@Outlook.com</p>
               <p className="mb-4">Riverview, FL</p>
               <div className="flex gap-3">
-                <Link href="https://www.linkedin.com/in/therealkennethwebber/" className="flex  gap-2 justify-center items-center text-gray-600 hover:text-black transition-colors">
+                <Link href="https://www.linkedin.com/in/therealkennethwebber/" className="flex gap-2 justify-center items-center text-gray-400 hover:text-white transition-colors">
                   <Linkedin className="w-5 text-blue-500 h-5" /> LinkedIn
                 </Link>
               </div>
@@ -132,7 +132,7 @@ export default function Resume() {
                   </div>
                   <div>
                     <h3 className="font-medium mb-1">Computer Science</h3>
-                    <p className="text-sm text-gray-600">Hillsborough Community College</p>
+                    <p className="text-sm text-gray-400">Hillsborough Community College</p>
                     <p className="text-sm text-gray-500">2010 – 2013</p>
                   </div>
                 </div>
@@ -143,7 +143,7 @@ export default function Resume() {
                   </div>
                   <div>
                     <h3 className="font-medium mb-1">High School Diploma</h3>
-                    <p className="text-sm text-gray-600">Lennard High School</p>
+                    <p className="text-sm text-gray-400">Lennard High School</p>
                     <p className="text-sm text-gray-500">2006 – 2009</p>
                   </div>
                 </div>
@@ -160,7 +160,7 @@ export default function Resume() {
                   <div className="flex flex-wrap gap-2">
                     {["Technical Support", "Software Support", "Ticketing Systems", "System Integrations"].map(
                       (skill) => (
-                        <span key={skill} className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">
+                        <span key={skill} className="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">
                           {skill}
                         </span>
                       ),
@@ -171,13 +171,13 @@ export default function Resume() {
                 <div>
                   <h3 className="text-sm font-medium mb-4">Process</h3>
                   <div className="flex flex-wrap gap-2">
-                    {[
-                      "Development Coordination",
-                      "Workflow Automation",
-                      "Process Optimization",
+                    {[ 
+                      "Development Coordination", 
+                      "Workflow Automation", 
+                      "Process Optimization", 
                       "Issue Resolution",
                     ].map((skill) => (
-                      <span key={skill} className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">
+                      <span key={skill} className="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">
                         {skill}
                       </span>
                     ))}
@@ -189,6 +189,5 @@ export default function Resume() {
         </div>
       </main>
     </div>
-  )
+  );
 }
-
