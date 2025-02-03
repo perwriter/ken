@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Resume",
-  description: "Kenneth",
+  title: "Kenneth Webber",
+  description: "Kenneth Webber Different Resumes Designs",
 };
 
 export default function RootLayout({
